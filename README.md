@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# Trackit-Saveetha
 
-## Project info
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)](https://lafdavns.site/)
 
-**URL**: https://lovable.dev/projects/7dbf26a4-dca0-4dd3-bb24-0b552fb5d3bd
+**Trackit-Saveetha** is a modern web application designed to streamline item tracking and inventory management for Saveetha University. Built with a focus on performance, scalability, and user experience, this project leverages cutting-edge technologies to deliver a seamless solution for managing institutional assets.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Real-Time Inventory Tracking**: Monitor and manage items across various departments with up-to-date information.
+- **User Authentication**: Secure login and access control using Supabase authentication services.
+- **Responsive Design**: Optimized for desktops, tablets, and mobile devices to ensure accessibility on all platforms.
+- **Interactive Dashboard**: Visualize inventory data with intuitive charts and tables.
+- **Search and Filter**: Quickly locate items using dynamic search and filtering options.
+- **Role-Based Access Control**: Differentiate user permissions for administrators, staff, and other roles.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7dbf26a4-dca0-4dd3-bb24-0b552fb5d3bd) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Frontend**: [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Backend & Auth**: [Supabase](https://supabase.io/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Package Manager**: [Bun](https://bun.sh/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📦 Project Structure
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Application pages
+│   ├── services/           # API calls and services
+│   └── utils/              # Utility functions
+├── supabase/               # Supabase configuration and SQL scripts
+├── .gitignore              # Git ignore rules
+├── package.json            # Project metadata and dependencies
+├── tailwind.config.ts      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+└── vite.config.ts          # Vite build configuration
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ⚙️ Getting Started
 
-**Use GitHub Codespaces**
+Follow these steps to set up the project locally:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**:
 
-## What technologies are used for this project?
+   ```bash
+   git clone https://github.com/Aadithya2201/Trackit-Saveetha.git
+   cd Trackit-Saveetha
+   ```
 
-This project is built with:
+2. **Install dependencies**:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+   ```bash
+   bun install
+   ```
 
-## How can I deploy this project?
+3. **Set up environment variables**:
 
-Simply open [Lovable](https://lovable.dev/projects/7dbf26a4-dca0-4dd3-bb24-0b552fb5d3bd) and click on Share -> Publish.
+   Create a `.env` file in the root directory and add your Supabase credentials:
 
-## Can I connect a custom domain to my Lovable project?
+   ```env
+   VITE_SUPABASE_URL=your-supabase-url
+   VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+   ```
 
-Yes, you can!
+4. **Run the development server**:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+   ```bash
+   bun dev
+   ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+   The application will be available at `http://localhost:3000`.
+
+---
+
+## 🌐 Live Demo
+
+Experience the application live:
+
+👉 [https://lafdavns.site/](https://lafdavns.site/)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgements
+
+- [Supabase](https://supabase.io/) for providing an open-source backend solution.
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS framework.
+- [Vite](https://vitejs.dev/) for fast and efficient build tooling.
